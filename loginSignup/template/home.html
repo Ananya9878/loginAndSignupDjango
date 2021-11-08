@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    {% load static %}
+
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+    <link href="{% static 'home.css' %}" rel="stylesheet">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="profilecont">
+  <header>
+    <div class="home">
+      <i class="fas fa-home"></i>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Forum</a>
+      </li>
+      <li>
+        <a href="#">Downloads</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li>
+    {% if user|length > 0 %}
+
+        <a href="../../logout">Logout</a>
+          {%else%}
+          <a href="../../login">Login / Register</a>
+
+          {% endif %}
+
+          </li>
+
+    </ul>
+  </header>
+  <div class="banner">
+    <div class="ava">
+<!--      <img src="https://eu.ui-avatars.com/api/?background=0D8ABC&color=fff&name=John+Doe&size=100" alt="ava" />-->
+    </div>
+    <h4> Ananya</h4>
+
+  </div>
+  <div class="content">
+    <div class="main">
+      <h5>Important Links</h5>
+      <ul class="posts">
+        <li class="coding">
+          <a href="https://github.com/Ananya9878">
+<!--            <div class="icon">-->
+<!--              <i class="fas fa-code"></i>-->
+<!--            </div>-->
+            <div class="txt">
+
+              <h5>LinkedIn</h5>
+
+            </div>
+          </a>
+        </li>
+
+          <li class="coding">
+          <a href="https://github.com/Ananya9878">
+<!--            <div class="icon">-->
+<!--              <i class="fas fa-code"></i>-->
+<!--            </div>-->
+            <div class="txt">
+
+              <h5>LinkedIn</h5>
+
+            </div>
+          </a>
+        </li>
+
+          <li class="coding">
+          <a href="https://github.com/Ananya9878">
+<!--            <div class="icon">-->
+<!--              <i class="fas fa-code"></i>-->
+<!--            </div>-->
+            <div class="txt">
+
+              <h5>LinkedIn</h5>
+
+            </div>
+          </a>
+        </li>
+
+
+      </ul>
+    </div>
+
+  </div>
+</div>
+<!-- partial -->
+
+</body>
+</html>

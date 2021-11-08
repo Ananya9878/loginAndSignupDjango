@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  background-color: #040404;
+  font-family: "Inter", sans-serif;
+}
+body .profilecont {
+  background-color: #0c0d0e;
+  width: 950px;
+  min-height: 500px;
+  border-radius: 4px;
+  margin: 40px auto;
+  position: relative;
+}
+body .profilecont header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  color: #b6b6b7;
+  z-index: 99;
+  background-color: rgba(4, 4, 4, 0.65);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0px 45px;
+}
+body .profilecont header .menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+body .profilecont header .menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+body .profilecont header .menu li a {
+  color: #b6b6b7;
+  text-decoration: 0;
+  padding: 12px 7px;
+  font-size: 0.75em;
+  transition: 280ms ease;
+}
+body .profilecont header .menu li a:hover {
+  color: #e7e7e7;
+}
+body .profilecont header .home {
+  cursor: pointer;
+  padding: 10px 10px;
+  background-color: rgba(4, 4, 4, 0);
+  transition: 240ms ease;
+}
+body .profilecont header .home:hover {
+  color: #e7e7e7;
+  background-color: rgba(4, 4, 4, 0.45);
+}
+body .profilecont .banner {
+  background: linear-gradient(90deg, #040ce6, #7a24d6);
+  width: 100%;
+  height: 130px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  position: relative;
+}
+body .profilecont .banner .btns {
+  position: absolute;
+  right: 45px;
+  bottom: 20px;
+  display: flex;
+}
+body .profilecont .banner .btns .btn {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #b6b6b7;
+  background-color: rgba(12, 13, 14, 0.35);
+  padding: 12px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 280ms ease;
+  transform: scale(1);
+}
+body .profilecont .banner .btns .btn:hover {
+  color: #cecfcf;
+  background-color: rgba(12, 13, 14, 0.45);
+  transform: scale(0.97);
+}
+body .profilecont .banner .ava {
+  position: absolute;
+  left: 45px;
+  bottom: -25px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+}
+body .profilecont .banner .ava img {
+  width: 100%;
+}
+body .profilecont .banner h4 {
+  color: #fff;
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.35em;
+  position: absolute;
+  bottom: 20px;
+  left: 160px;
+  display: flex;
+  align-items: center;
+}
+body .profilecont .banner h4 span {
+  font-size: 0.6em;
+  margin-left: 5px;
+  color: #cecfcf;
+  background-color: rgba(12, 13, 14, 0.45);
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+body .profilecont .content {
+  color: #e7e7e7;
+  display: flex;
+  align-items: flex-start;
+  padding: 45px 45px;
+}
+body .profilecont .content h5 {
+  font-weight: 400;
+  font-size: 1.25em;
+  margin: 0;
+  margin-bottom: 12px;
+}
+body .profilecont .content .main {
+  width: calc(100% - 270px);
+  flex-shrink: 0;
+}
+body .profilecont .content .posts {
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+body .profilecont .content .posts li {
+  list-style: none;
+  margin: 4px 0;
+}
+body .profilecont .content .posts li a {
+  color: unset;
+  text-decoration: unset;
+  display: flex;
+  align-items: center;
+  background-color: #111213;
+  border-radius: 5px;
+  padding: 8px 18px;
+  transition: 320ms ease;
+}
+body .profilecont .content .posts li a:hover {
+  background-color: #08090a;
+}
+body .profilecont .content .posts li a .icon {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  margin-right: 18px;
+}
+body .profilecont .content .posts li a .icon i {
+  font-size: 1.5em;
+  color: #2e2f30;
+}
+body .profilecont .content .posts li a .txt {
+  display: flex;
+  flex-direction: column;
+}
+body .profilecont .content .posts li a .txt h5 {
+  font-size: 1.15em;
+  margin-bottom: 4px;
+  color: #e7e7e7;
+}
+body .profilecont .content .posts li a .txt .sub {
+  display: flex;
+  align-items: flex-end;
+}
+body .profilecont .content .posts li a .txt .sub span, body .profilecont .content .posts li a .txt .sub strong {
+  font-size: 0.75em;
+  color: #636465;
+  font-weight: 400;
+}
+body .profilecont .content .posts li.coding .icon i {
+  color: #f97d10;
+}
+body .profilecont .content .posts li.coding strong {
+  color: #f97d10 !important;
+}
+body .profilecont .content .posts li.crypto .icon i {
+  color: #4abbf3;
+}
+body .profilecont .content .posts li.crypto strong {
+  color: #4abbf3 !important;
+}
+body .profilecont .content .posts li.design .icon i {
+  color: #ba3ffc;
+}
+body .profilecont .content .posts li.design strong {
+  color: #ba3ffc !important;
+}
+body .profilecont .content .posts li.general .icon i {
+  color: #259676;
+}
+body .profilecont .content .posts li.general strong {
+  color: #259676 !important;
+}
+body .profilecont .content .side {
+  width: 270px;
+  flex-shrink: 0;
+}
+body .profilecont .content .side p {
+  color: #5a5a5b;
+  font-size: 0.9em;
+}
