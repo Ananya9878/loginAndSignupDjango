@@ -3,6 +3,7 @@
 Dependencies:
 
 1)Python>3.5
+
 2)django 3.0
 
 Steps:
